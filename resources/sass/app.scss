@@ -1,9 +1,117 @@
+@use "bootstrap";
 
+/* commonGeneralRules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial,
+        sans-serif;
+}
 
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
 
+ul {
+    list-style-type: none;
+}
 
+li {
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+}
+/* /commonGeneralRules */
 
+/* utility_rules */
+$visa: #0282f9;
+$link_visa: #ffffff;
+$brand_color: #002d75;
+$brand_color_secondary: gray;
+$link_color: #464f57;
+$row_icons: #0282F9;
+/* /utility_rules */
 
+/* #SiteHeader */
+#SiteHeader {
+    height: auto;
+    margin-bottom: 0.5rem;
 
+    #row_visa {
+        background-color: $visa;
+        a {
+            color: $link_visa !important;
+        }
+    }
+
+    .row {
+        justify-content: space-between;
+        align-items: center;
+        #logo {
+            width: 10%;
+            img:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    #nav-bar {
+        width: 80%;
+    }
+
+    .menu {
+        li {
+            width: auto;
+            list-style: none;
+            a {
+                margin: 0 0.5rem;
+                padding: 2rem 0;
+                color: $link_color;
+                &:hover {
+                    color: $brand_color;
+                    border-bottom: 5px solid $brand_color;
+                }
+            }
+        }
+    }
+
+    #search {
+        width: 10%;
+        input {
+            border: none;
+            border-bottom: 5px $brand_color;
+        }
+    }
+}
+/* /#SiteHeader */
+
+/* #SiteMain */
+#jumbo {
+    height: 400px;
+    background-image: url("../img/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#rowIcons {
+    background-color: $row_icons !important;
+    .col-2 {
+        margin: 2rem 0;
+    
+        a{
+            background-image: white;
+            h6{
+                color: white;
+            }
+        }
+    }
+}
+/* /#SiteMain */
