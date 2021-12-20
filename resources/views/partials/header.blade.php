@@ -19,7 +19,7 @@
     <!-- /#row_visa -->
 
     <!-- .container -->
-    <div class="container">
+    <div class="container my-3">
         <div class="d-flex justify-content-between align-items-baseline mt-3">
             <div id="logo">
                 <img src="{{asset('img/dc-logo.png')}}" alt="immagine logo dc">
@@ -59,4 +59,8 @@
         </div>
     </div>
     <!-- /.container -->
+
+    <!-- #jumbotron -->
+    <div id="jumbotron"></div>
+    <!-- /#jumbotron -->
 </header>

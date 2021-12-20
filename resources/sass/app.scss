@@ -1,49 +1,18 @@
 @use "bootstrap";
 
-/* commonGeneralRules */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import 'partials/variables';  
+@import 'partials/common';
 
-body {
-    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial,
-        sans-serif;
-}
-
-.container {
-    width: 1200px;
-    height: 100%;
-    margin: auto;
-    padding: 0 !important;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-/* /commonGeneralRules */
-
-/* color_rules */
-$color_heavenly: #0282f9;
-$link_visa: #ffffff;
-$menu_link_color: #464646;
-$row_cards_background_color: #1C1C1C;
-$footer_backgroundColor: #303030;
-/* /color_rules */
 
 /* #site_header */
 #site_header {
     height: auto;
-    margin-bottom: 0.5rem;
+    #jumbotron {
+        height: 300px;
+        background-image: url("../img/jumbotron.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     #row_visa {
         background-color: $color_heavenly;
@@ -108,16 +77,6 @@ $footer_backgroundColor: #303030;
 /* #site_main */
 #site_main {
     height: auto;
-    position: relative;
-    z-index: 10;
-
-    #jumbo {
-        height: 300px;
-        background-image: url("../img/jumbotron.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
     #row_cards {
         background-color: $row_cards_background_color;
 

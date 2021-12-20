@@ -11243,6 +11243,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* color_rules */
+/* /color_rules */
 /* commonGeneralRules */
 * {
   margin: 0;
@@ -11251,7 +11253,7 @@ textarea.form-control-lg {
 }
 
 body {
-  font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+  font-family: Greta Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -11273,13 +11275,79 @@ a {
   text-decoration: none;
 }
 
+.comic {
+  width: 180px;
+  position: relative;
+  left: 350px;
+  bottom: 230px;
+  z-index: 100;
+}
+.comic .image_comic {
+  max-width: 100%;
+}
+.comic #comic_gallery {
+  background-color: #00A9D9;
+}
+.comic #comic_gallery h6 {
+  color: #fff;
+}
+
+.row_blue {
+  background-color: #0282f9;
+  height: 100px;
+  position: relative;
+  bottom: 320px;
+  left: 0;
+}
+
+.text_comic {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  position: relative;
+  bottom: 250px;
+  left: -30px;
+}
+.text_comic h4 {
+  text-align: left;
+  text-transform: uppercase;
+  color: #003F5E;
+}
+.text_comic .row_green {
+  width: 100%;
+  height: 50px;
+  background-color: #55BA59;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: last baseline;
+}
+.text_comic .row_green .price {
+  color: #BAF980;
+}
+.text_comic .row_green h6 {
+  color: #fff;
+}
+.text_comic .row_green .available h6 {
+  color: #BAF980;
+}
+.text_comic .row_green .vr {
+  height: 100%;
+  border: 1px solid #000;
+}
+.text_comic .row_green .check {
+  color: #fff;
+}
+
 /* /commonGeneralRules */
-/* color_rules */
-/* /color_rules */
 /* #site_header */
 #site_header {
   height: auto;
-  margin-bottom: 0.5rem;
+}
+#site_header #jumbotron {
+  height: 300px;
+  background-image: url("../img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #site_header #row_visa {
   background-color: #0282f9;
@@ -11336,14 +11404,6 @@ a {
 /* #site_main */
 #site_main {
   height: auto;
-  position: relative;
-  z-index: 10;
-}
-#site_main #jumbo {
-  height: 300px;
-  background-image: url("../img/jumbotron.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #site_main #row_cards {
   background-color: #1C1C1C;

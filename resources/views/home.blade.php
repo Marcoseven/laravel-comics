@@ -1,10 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-<!-- #jumbo -->
-<div id="jumbo"></div>
-<!-- /#jumbo -->
-
 <!-- #row_cards -->
 <div id="row_cards">
 	<div class="container">
