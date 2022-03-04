@@ -2,6 +2,8 @@
 
 @import 'partials/variables';  
 @import 'partials/common';
+@import 'partials/comics';
+
 
 
 /* #site_header */
@@ -79,7 +81,6 @@
     height: auto;
     #row_cards {
         background-color: $row_cards_background_color;
-
         #button_series h2 {
             width: 20%;
             padding: 0.5rem 1rem;
